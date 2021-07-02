@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home work 1</title>
+</head>
+
+<body>
+    <script>
+        'use strict';
+        //задание 1
+        let celsius = 18;
+        let fahrenheit = (9 / 5) * celsius + 32;
+        alert("Температура по Фаренгейту: " + fahrenheit);
+        //задание 2
+        let admin = null;
+        let name = null;
+        name = '"Василий"';
+        admin = name;
+        console.log(admin);
+        //задание 3
+        console.log(10 + 10 + "10"); //10 складываем с 10 и конкатенируем с '10' (строка), результат выводим в консоль
+        console.log(10 + "10" + 10);//"10"переводит все значения в строки, конкатенируем значения, результат выводим в консоль
+        console.log(10 + 10 + +"10");//переводит все значения в номера, строковое значение "10" с помощью двойного +, 10+10+10, результат выводим в консоль
+        console.log(10 / -"");//использована пустая строка со знаком -;10 поделить на бесконечность нельзя, результат выводим в консоль
+        console.log(10 / +"2,5");//результат является не числом, использована не точка, результат выводим в консоль
+        //тренировка
+        let tCelc = parseInt(prompt("Введите число температуры по Цельсию"));
+        let tFar = (9 / 5) * tCelc + 32;
+        alert("Температура по Фаренгейту: " + tFar);
+
+    </script>
+</body>
+
+</html>
